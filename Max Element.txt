@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class MaxMinArray {
+
+	public static void main(String[] args) {
+		 Scanner scan = new Scanner(System.in);
+	        int n = scan.nextInt();
+	    int ar[] = new int[n];
+	    int i;
+	    for(i=0;i<n;i++)
+	    {
+	    ar[i]=scan.nextInt();
+	    }
+	    Arrays.sort(ar);
+	      System.out.println("Maximum element is " +ar[n-1]);
+	       System.out.println("Minmum element is " +ar[0]);
+	       scan.close();
+	}
+}
